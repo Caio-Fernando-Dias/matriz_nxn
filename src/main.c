@@ -10,20 +10,29 @@ int main(){
 		scanf("%d", &opcao);
 		
 		if(opcao == 1){
-			printf("DIGITE O TAMANHO DA MATRIZ QUADRADA -> \n");
+			printf("\nDIGITE O TAMANHO DA MATRIZ QUADRADA -> ");
 			scanf("%d", &tam_matriz);
 			
 			int matriz[tam_matriz][tam_matriz];
 			
+			printf("\nCRIANDO MATRIZ...\n");
 			inicia_matriz(tam_matriz, matriz);
+
+			printf("\nIMPRIMINDO A MATRIZ ORIGINAL\n");
 			imprimi(tam_matriz, matriz);
+			
+			printf("\nPERCORRENDO A MATRIZ...\n");
 			anda_matriz(tam_matriz, matriz);
+
+
+			printf("\nIMPRIMINDO O CAMINHO PERCORRIDO\n");
+			imprimi(tam_matriz, matriz);
 			
 		} else if(opcao == 2){
-			printf("Finalizando o programa...");
+			printf("\nFinalizando o programa...\n");
 			
 		}else{	
-			printf("Opcao invalida!");
+			printf("\nOpcao invalida!\n");
 		}
 	}
 	
